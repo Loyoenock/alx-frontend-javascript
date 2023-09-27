@@ -1,11 +1,18 @@
-function getResponseFromAPI() {
+// This exports a default function named getResponseFromAPI.
+export default function getResponseFromAPI() {
+  // Simulate a boolean indicating a successful operation.
+  const success = true;
+
+  // Create and return a new Promise.
   return new Promise((resolve, reject) => {
-    // Simulate an asynchronous operation (e.g., fetching data from an API)
-    setTimeout(() => {
-      const data = { message: 'API response data' };
-      resolve(data); // Resolve the promise with the data
-    }, 2000); // Simulated delay of 2 seconds
+    // Check the success condition.
+    if (success) {
+      // If successful, resolve the Promise with no data.
+      resolve();
+    } else {
+      // If unsuccessful, reject the Promise.
+      reject();
+    }
   });
 }
 
-export default getResponseFromAPI;

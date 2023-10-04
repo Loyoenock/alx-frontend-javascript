@@ -438,7 +438,7 @@ Finally, call the updateRow and deleteRow commands.
 
 Expected result:
 
-````
+```
 const obj = {firstName: "Guillaume", lastName: "Salva"};
 CRUD.insertRow(obj)
 // Insert row {firstName: "Guillaume", lastName: "Salva"}
